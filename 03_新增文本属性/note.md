@@ -16,3 +16,19 @@
     clip：当内联内容溢出时，将溢出部分裁减掉。（默认值）
     ellipsis：当内联内容溢出块容器时，将溢出部分替换为...
     注：要使text-overflow生效，块容器必须显示定义overflow为非visible值，white-space为nowrap值
+
+## text-decoration:文本修饰
+    css3升级了text-decoration属性，使其变成了复合属性
+    text-decoration: text-decoration-line || text-decoration-style || text-decoration-color
+    text-decoration-line：设置文本装饰线的位置
+        none：指定文本无装饰（默认）
+        underline:下划线
+        overline:上划线
+        line-through：贯穿线
+    text-decoration-style:文本装饰线条的形状
+        solid：实线（默认）
+        double：双线
+        dotted：点状线条
+        dashed：虚线
+        wavy：波浪线
+    text-decoration-color：文本装饰线条的颜色
