@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear-gradient</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin-left: 50px;
+        }
+
+        .box1 {
+            background-image: linear-gradient(red, yellow, green); /*默认是从上到下的方向渐变*/
+        }
+
+        .box2 {
+            /* background-image: linear-gradient(to right, red, yellow, green); */
+            background-image: linear-gradient(to right top, red, yellow, green);
+        }
+
+        .box3 {
+            background-image: linear-gradient(20deg, red, yellow, green); /*20deg，指定角度。这个角度是：渲染方向顺时针转过的角度。注意：0deg的渲染方向是从下到上的*/
+        }
+
+        .box4 {
+            background-image: linear-gradient(red 30px, yellow 100px, green 190px);
+            /* background-image: linear-gradient(red 0 30px, yellow 60px 100px, green 150px 190px); */
+            /* background-image: linear-gradient(red 0 15%, yellow 30% 70%, green 86%); */
+        }
+
+        /*给字体设置彩色渐变填充*/
+        .box5 {
+            font-size: 80px;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+
+            color: transparent;
+            background-image: linear-gradient(to right, red 0, yellow 33%, green 66%, blue 99%);
+            -webkit-background-clip: text;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box box1">默认情况（从上到下）</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">你好啊</div>
+</body>
+</html>
