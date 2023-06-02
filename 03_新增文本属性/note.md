@@ -11,3 +11,8 @@
     pre-wrap：在pre效果的基础上，超出元素边界自动换行。
     pre-line：在pre效果的接触基础上，超出元素边界自动换行，且只识别文本中的换行，行首和行尾的空格会忽略。
     nowrap：强制不换行。
+
+## text-overflow:设置文本溢出时的呈现模式
+    clip：当内联内容溢出时，将溢出部分裁减掉。（默认值）
+    ellipsis：当内联内容溢出块容器时，将溢出部分替换为...
+    注：要使text-overflow生效，块容器必须显示定义overflow为非visible值，white-space为nowrap值
