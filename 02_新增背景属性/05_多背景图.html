@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background复合属性</title>
+    <style>
+        .box1 {
+            width: 400px;
+            height: 400px;
+            font-size: 40px;
+            margin: 50px;
+
+            background: url('./img/111.jpeg') no-repeat left top / 150px 150px,
+                        url('./img/222.png') no-repeat right top / 150px 150px,
+                        url('./img/ye.jpg') no-repeat left bottom / 150px 150px,
+                        url('./img/111.jpeg') no-repeat right bottom / 150px 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+</body>
+</html>
