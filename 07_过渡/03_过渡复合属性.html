@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡复合属性</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 100px;
+            border: 1px solid #000;
+            margin-top: 100px;
+        }
+
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            transition: 3s width 0s ease-in; /*只要保证duration在delay前面即可，其他的顺序无所谓*/
+        }
+
+        .outer:hover .inner {
+            width: 1000px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>
