@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画-steps的使用</title>
+    <style>
+        /* 定义一个动画（定义一组关键帧） ---第一种方式*/
+        @keyframes fly {
+            from {
+                /* background-position: 143px; */
+                background-position: 0;
+            }
+            /* 最后一帧 */
+            to {
+                /* background-position: -857px; */
+                background-position: -1000px;
+            }
+        }
+
+        .outer {
+            width: 143px;
+            height: 177px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            margin-top: 200px;
+            background-image: url('fly.png');
+            animation: fly 0.6s steps(7) infinite;
+        }
+
+        /*
+        使用steps注意事项：
+            1.先看keyframes中定义的第一帧到最后一帧所移动的距离
+            2.看这段距离在背景图中对应着几个关键帧（假设是对应n个关键帧）
+            3.根据关键帧的数量确定执行动画需要分成几步（即steps(n)）
+            注：一般情况下，是移动整个背景图的宽度或者高度，这样背景图的所有关键帧的数量就是需要设置的动画执行的step
+        */
+
+    </style>
+</head>
+<body>
+    <div class="outer"></div>
+</body>
+</html>
