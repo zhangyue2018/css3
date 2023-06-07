@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体查询-媒体类型</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            height: 200px;
+            line-height: 200px;
+            background-color: gray;
+            font-size: 100px;
+            text-align: center;
+        }
+
+        /* 检测到视口的宽度为800px时，应用如下样式 */
+        @media (width: 800px) {
+            h1 {
+                background-color: green;
+            }
+        }
+        /* 检测到设备屏幕的宽度为156px时，应用如下的样式 */
+        @media (device-width: 1536px) {
+            h1 {
+                background-image: linear-gradient(red, green, orange);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>你好啊</h1>
+</body>
+</html>
