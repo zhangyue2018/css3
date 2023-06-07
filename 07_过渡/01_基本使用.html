@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡基本使用</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /*设置哪个属性需要过渡效果*/
+            /* transition-property: 'width', 'height'; */
+            transition-property: all; /*让所有能过渡的属性都过渡*/
+            /*设置过渡时间*/
+            /* transition-duration: 1s, 5s; */
+            transition-duration: 1s;
+        }
+        .box1:hover {
+            width: 400px;
+            height: 400px;
+            opacity: 0;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扭曲</title>
+    <style>
+        .outer {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #000;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+            /*通过关键词调整变换原点*/
+            /* transform-origin: right bottom; */
+
+            /*通过具体像素值调整变换原点*/
+            /* transform-origin: 50px 50px; */
+
+            /*通过百分比调整变换原点*/
+            /* transform-origin: 30% 30%; */
+
+            /*只给一个值*/
+            /*如果是关键字，则由关键字决定赋值给x轴或y轴，如果是数值，则赋值给x轴*/
+            /* transform-origin: left; */
+            /* transform-origin: top; */
+            /* transform-origin: 30px; */
+            /* transform-origin: 25%; */
+
+            /*变换原点位置的改变对 旋转 有影响*/
+            /* transform: rotate(0deg); */
+            /*变换原点位置的改变对 缩放 有影响*/
+            /* transform: scale(1.3); */
+
+            /*变换原点位置的改变对 位移 没有影响*/
+            transform: translate(100px, 100px);
+        }
+        span {
+            display: inline-block;
+            background-color: blueviolet;
+            width: 50px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"><span></span></div>
+    </div>
+</body>
+</html>

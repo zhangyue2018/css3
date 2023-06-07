@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D空间与景深</title>
+    <style>
+        .outer {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #000;
+            margin: 0 auto;
+            margin-top: 100px;
+            /* 开启3D空间 */
+            transform-style: preserve-3d;
+            /* 设置景深（有了透视效果，近大远小） */
+            perspective: 500px;
+            /*调整透视点的位置--即观察者的位置*/
+            perspective-origin: 200px 300px; /*这是默认的透视点的值（在开启了3D空间元素的正中心）*/
+
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+            /* transform: rotateX(30deg); */
+            /* transform: translateZ(150px); */ /*translateZ只能写像素值，不能写百分比*/
+            transform: translate3d(0, 0, 100px); /*必须写3个值*/
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">你好啊</div>
+    </div>
+</body>
+</html>

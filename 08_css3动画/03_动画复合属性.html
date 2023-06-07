@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画复合属性</title>
+    <style>
+        /* 定义一个动画（定义一组关键帧） ---第一种方式*/
+        @keyframes atguigu {
+            /* 第一帧 */
+            from {
+
+            }
+            /* 最后一帧 */
+            to {
+                transform: translate(900px) rotate(360deg);
+                background-color: purple;
+                border-radius: 50%;
+            }
+        }
+
+        .outer {
+            width: 1000px;
+            height: 100px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: deepskyblue;
+
+            animation: atguigu 2s 0.5s linear 2 alternate forwards;
+        }
+
+        .outer:hover .inner {
+            /* 动画的播放状态 */
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>
