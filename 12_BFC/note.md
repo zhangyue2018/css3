@@ -18,7 +18,7 @@
     4.行内块元素
     5.表格单元格：table、thead、tbody、tfoot、th、td、tr、caption
     6.overflow的值不为visible的块元素
-    7.伸缩项目
+    7.弹性盒子和盒子里的伸缩项目---flex
     8.多列容器
     9.column-span为all的元素（即使该元素没有包裹在多列容器中）
     10.display的值，设置为flow-root
